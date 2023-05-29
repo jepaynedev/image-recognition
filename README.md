@@ -14,3 +14,7 @@ This project will serve as a more structured implementation as I wade back throu
 
 - Reimplement the experimental work from an old project with better structure, documentation, and scripts required for easy reproducibility.
 - Tagged steps along the way to serve as reference points for important steps along the way
+
+## Guide
+
+For guided instructions, the `/docs` folder, starting with [Setup.md](docs/Setup.md)
