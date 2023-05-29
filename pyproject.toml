@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-recognition"
+version = "0.0.0"
+authors = [
+    {name = "James Payne", email = "github@jepaynedev.com"},
+]
+description = "Learning classic image recognition techniques"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Environment :: Win32',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Microsoft :: Windows',
+    'Programming Language :: Python :: 3.8',
+]
+dependencies = []
+
+[project.scripts]
+dataset = "scripts.dataset:main"
