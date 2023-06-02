@@ -8,24 +8,17 @@ import logging
 
 logging.basicConfig(
     level=logging.INFO,
-    format='%(message)s',
+    format="%(message)s",
     handlers=[logging.StreamHandler()],
 )
 logger = logging.getLogger(__name__)
 
 
-# Console arguments metadata and help
-NAME = "dataset"
-DESCRIPTION = "Download, extraction, and organization of known datasets"
-# Script constants
-DATASETS_DIRNAME = ".datasets"
-
-
 def parse_arguments(args=None):
     """Parse command line arguments for the datasets script"""
     parser = argparse.ArgumentParser(
-        prog=NAME,
-        description=DESCRIPTION,
+        prog="dataset",
+        description="Download, extraction, and organization of known datasets",
     )
     parser.add_argument(
         "command",
@@ -35,9 +28,9 @@ def parse_arguments(args=None):
     parser.add_argument(
         "--log-level", "-l",
         choices=[
-            'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'
+            "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
         ],
-        default='INFO',
+        default="INFO",
         help="Set the logging level",
     )
     parser.add_argument(
@@ -55,5 +48,5 @@ def main():
     logger.debug(args)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
