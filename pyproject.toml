@@ -22,5 +22,12 @@ classifiers = [
 ]
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pytest",
+    "pylint",
+]
+
 [project.scripts]
 dataset = "scripts.dataset:main"
