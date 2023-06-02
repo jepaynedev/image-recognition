@@ -17,4 +17,8 @@ This project will serve as a more structured implementation as I wade back throu
 
 ## Guide
 
-For guided instructions, the `/docs` folder, starting with [Setup.md](docs/Setup.md)
+For guided instructions, the `/docs` folder, starting with [Setup.md](docs/01_Setup.md)
+
+## Citations
+
+[[1]](docs/02_Datasets.md)P. Moreels and P. Perona, “Caltech Home Objects 2006”. CaltechDATA, Apr. 07, 2022. doi: 10.22002/D1.20089.
