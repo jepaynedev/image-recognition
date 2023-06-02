@@ -4,7 +4,6 @@ Scripted aquisition and project setup for ease of use and reproducibility
 """
 import argparse
 import logging
-import pathlib
 
 
 logging.basicConfig(
@@ -47,25 +46,6 @@ def parse_arguments(args=None):
         help="Force reinstallation of the dataset if it already is installed",
     )
     return parser.parse_args(args)
-
-
-def get_project_dir():
-    """Resolves the project root directory relative to the current file"""
-    parent_dir = pathlib.Path(__file__).parent
-    while parent_dir.name != 'src':
-        parent_dir = parent_dir.parent
-    # Parent of src folder is the project root directory
-    project_dir = parent_dir.parent
-    return project_dir
-
-
-def get_datsets_dir(ensure_exists=False):
-    """Resolves the standard directory for datasets and optionally create if necessary"""
-    project_dir = get_project_dir()
-    datasets_dir = project_dir / DATASETS_DIRNAME
-    if ensure_exists:
-        datasets_dir.mkdir(parents=True, exist_ok=True)
-    return datasets_dir
 
 
 def main():
